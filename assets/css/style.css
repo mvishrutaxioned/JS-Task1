@@ -149,15 +149,14 @@ main .wrapper {
   display: none;
   justify-content: center;
   position: relative;
+  opacity: .5;
 }
 
-.tab-content li:first-child {
-  display: flex;
+.tab-content li.show {
+  display: flex; 
+  animation: fade .5s ease-out forwards;
 }
-
-.tab-content li img{
-  width: auto;
-}
+.tab-content li img{ width: auto; }
 
 /* tab content styling ends here */
 
@@ -197,9 +196,7 @@ main .wrapper {
   transition: .5s ease;
 }
 
-.tabs li a.active, .tabs li a::before.active {
-  color: #8e44ad;
-}
+.tabs li a.active, .tabs li a.active::before { color: #8e44ad; }
 
 /* tabs styling ends here */
 
@@ -215,16 +212,12 @@ main .wrapper {
     justify-content: center;
     align-items: center;
   }
-  main .wrapper {
-    width: 60%;
-  }
-  .tabs {
-    align-items: center;
-  }
+  main .wrapper { width: 60%; }
+  .tabs { align-items: center; }
 }
 
 @media only screen and (max-width: 540px) {
-  main .wrapper {
-    width: 80%;
-  }
+  main .wrapper { width: 80%; }
 }
+
+@keyframes fade { to { opacity: 1; } }
