@@ -108,52 +108,60 @@ li {
   width: 86%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
 
 /*=================================
   main styling starts here
 =================================*/
 
+main {
+  padding: 12px 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #b88acb;
+}
 
+main .wrapper {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 3px solid #fff;
+  border-radius: 15px;
+}
 
+/* tab content styling starts here */
 
+.tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+}
 
+.tab-content li {
+  height: 86vh;
+  display: none;
+  justify-content: center;
+  position: relative;
+}
 
+.tab-content li:first-child {
+  display: flex;
+}
 
+.tab-content li img{
+  width: auto;
+}
+
+/* tab content styling ends here */
 
 /*=================================
   main styling ends here
 =================================*/
 
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  
