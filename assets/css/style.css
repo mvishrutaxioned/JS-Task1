@@ -207,3 +207,24 @@ main .wrapper {
   main styling ends here
 =================================*/
 
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 1024px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main .wrapper {
+    width: 60%;
+  }
+  .tabs {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  main .wrapper {
+    width: 80%;
+  }
+}
